@@ -21,9 +21,12 @@ for (let i = 0; i < headers.length; i++) {
 
 for (let i = 0; i < subTitles.length; i++) {
     subTitles[i].addEventListener("click", () => {
-        hideMe[i].innerHTML === "&#9650"
-        ? hideMe[i].innerHTML = "&#9660"
-        : hideMe[i].innerHTML = "&#9650";
-        console.log(hideMe);
+        hideMe[i].innerHTML === "+"
+        ? hideMe[i].innerHTML = "-"
+        : hideMe[i].innerHTML = "+";
+
+        // hideMe[i].innerHTML === "&#9650"
+        // ? hideMe[i].innerHTML = "&#9660"
+        // : hideMe[i].innerHTML = "&#9650";
     })
 }
